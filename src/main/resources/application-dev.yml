@@ -1,0 +1,43 @@
+server:
+  port: 8099
+###log
+logging:
+  level: info
+spring:
+  ### datasource
+  datasource:
+    url:
+    driver-class-name:
+    username:
+    password:
+
+   ###  JPA
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  ### Redis
+  redis:
+    host: 127.0.0.1
+    port:
+    timeout:
+    database: 0
+
+  data:
+    ###  Mongodb
+    mongodb:
+      host:
+      port:
+      username:
+      password:
+
+  ### Devtools
+  devtools:
+    livereload:
+      enabled: true
+
+### Mybatis
+mybatis:
+  config-location:
+  mapper-locations:
